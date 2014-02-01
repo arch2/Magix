@@ -1,0 +1,78 @@
+<!-- xmlns:android="http://schemas.android.com/apk/res/android" -->
+<!-- xmlns:tools="http://schemas.android.com/tools" -->
+<!-- <?xml version="1.0" encoding="UTF-8"?> -->
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"    
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:id="@+id/activity_main"
+    android:orientation="vertical" >
+
+    <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="5"
+        android:id="@+id/img"
+        android:src="@drawable/m3"
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:gravity="center"
+        >	    
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:id="@+id/prev"
+	        android:src="@drawable/previous"
+	        />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:id="@+id/current"
+	        android:src="@drawable/m1"
+	        />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_weight="1"
+	        android:id="@+id/next"
+	        android:src="@drawable/next"
+	        />
+	 </LinearLayout>
+	 <LinearLayout 
+        android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_weight="1"
+	    android:gravity="center"
+	     >
+		 <Button
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:gravity="center"
+		     android:id="@+id/save"
+		     android:text="Save card"
+		     />
+		 <Button
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:gravity="center"
+		     android:id="@+id/view"
+		     android:text="View saved cards"
+	     />
+	 </LinearLayout>
+	 <Button
+	     android:layout_width="wrap_content"
+	     android:layout_height="wrap_content"
+	     android:layout_gravity="center"
+	     android:layout_weight="1"
+	     android:id="@+id/game"
+	     android:text="Game type"
+	     />
+</LinearLayout>

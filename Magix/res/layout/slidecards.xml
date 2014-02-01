@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:id="@+id/slides"
+    >
+    
+     <ImageView 
+        android:layout_width="fill_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center_vertical"
+		android:layout_weight="5"
+        android:id="@+id/simg"
+        android:src="@drawable/m3"        
+        />
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+		android:layout_weight="1"
+        >	 
+		<ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	   		android:gravity="center"
+	        android:id="@+id/sprev"
+	        android:src="@drawable/previous"
+	        /> 
+	     <Button
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:gravity="center"		     
+		     android:layout_gravity="center"
+		     android:id="@+id/delete"
+		     android:text="Delete"
+		     />
+	    <ImageView 
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	    	android:gravity="center"
+	        android:id="@+id/snext"
+	        android:src="@drawable/next"
+	        />		 
+	 </LinearLayout>
+
+	  <Button
+		     android:layout_width="wrap_content"
+		     android:layout_height="wrap_content"
+		     android:gravity="center"
+		     android:layout_gravity="center"
+		     android:id="@+id/sclose"
+		     android:text="Close"
+		     />
+
+</LinearLayout>
